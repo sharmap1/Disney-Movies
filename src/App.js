@@ -1,6 +1,7 @@
 import React from "react";
 // import ReactDOM from 'react-dom';
 import "./App.css";
+import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row } from "react-bootstrap";
 import Cards from "./Cards";
@@ -9,17 +10,17 @@ import Footer from "./Footer";
 function App() {
   return (
     <>
-      <h1
-        style={{
-          textAlign: "center",
-          fontFamily: "'Cinzel', serif",
-          color: "purple",
-          backgroundColor: "beige",
-        }}
-      >
-        The Greatest Disney Movies Ever
-      </h1>
       <Container fluid>
+        <h1
+          style={{
+            textAlign: "center",
+            fontFamily: "'Cinzel', serif",
+            color: "purple",
+            backgroundColor: "beige",
+          }}
+        >
+          The Greatest Disney Movies Ever
+        </h1>
         <Row md={6}>
           {Sdata.map((val) => {
             return (
@@ -32,8 +33,8 @@ function App() {
             );
           })}
         </Row>
+        <Footer />
       </Container>
-      <Footer />
     </>
   );
 }
