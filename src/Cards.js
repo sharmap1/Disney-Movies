@@ -17,7 +17,7 @@ function Cards(props) {
           <Heading moviename={props.moviename} />
           <a href={props.link} target="blank">
             <Button variant="light">
-              <AiFillPlayCircle />
+              <AiFillPlayCircle style={{ color: "lightpink" }} />
             </Button>
           </a>
         </div>

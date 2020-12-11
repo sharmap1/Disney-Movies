@@ -14,7 +14,7 @@
   opacity: 0.9;
   color: purple;
   border-color: purple;
-  border: 1 px solid purple;
+  border: 1px solid purple;
   transform: scale(1.09);
   overflow: hidden;
 }
@@ -32,9 +32,7 @@
 .card-heading {
   font-family: "Abril Fatface", cursive;
 }
-.btn-light {
-  color: #fff;
-}
+
 .btn-light:hover {
   color: #fff !important;
   background-color: purple !important;
