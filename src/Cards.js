@@ -2,23 +2,24 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 import "./index.css";
+import Image from "./Image";
+import Heading from "./Heading";
+import Cardtitle from "./Cardtitle";
+import { AiFillPlayCircle } from "react-icons/ai";
 
 function Cards(props) {
   return (
     <>
-      <div className="card">
+      <div className="card" style={{ backgroundColor: "beige" }}>
         <div className="overflow">
-          <img src={props.imgsrc} className="card-img-top" alt="cardmovie" />
-          <div
-            className="card-body"
-            style={{ backgroundColor: "beige", margin: "2px" }}
-          >
-            <h5 className="card-title">{props.title}</h5>
-            <p className="card-text">{props.moviename}</p>
-            <a href={props.link} target="blank">
-              <Button variant="light">Watch Now</Button>
-            </a>
-          </div>
+          <Image imgsrc={props.imgsrc} />
+          <Cardtitle title={props.title} />
+          <Heading moviename={props.moviename} />
+          <a href={props.link} target="blank">
+            <Button variant="light">
+              <AiFillPlayCircle />
+            </Button>
+          </a>
         </div>
       </div>
     </>

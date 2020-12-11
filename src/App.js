@@ -7,6 +7,7 @@ import { Container, Row } from "react-bootstrap";
 import Cards from "./Cards";
 import Sdata from "./Sdata";
 import Footer from "./Footer";
+
 function App() {
   return (
     <>
@@ -25,6 +26,7 @@ function App() {
           {Sdata.map((val) => {
             return (
               <Cards
+                key={val.id}
                 imgsrc={val.imgsrc}
                 title={val.title}
                 moviename={val.moviename}
