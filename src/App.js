@@ -1,17 +1,13 @@
 import React from "react";
-// import ReactDOM from 'react-dom';
 import "./App.css";
-import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Cards from "./Cards";
 import Sdata from "./Sdata";
-import Footer from "./Footer";
 
 function App() {
   return (
     <>
-      <Container fluid>
         <h1
           style={{
             textAlign: "center",
@@ -22,9 +18,11 @@ function App() {
         >
           The Greatest Disney Movies Ever
         </h1>
-        <Row md={6}>
+          <Container >
+        <Row  >
           {Sdata.map((val) => {
             return (
+              <Col xs={12} md={4} lg={3}>
               <Cards
                 key={val.id}
                 imgsrc={val.imgsrc}
@@ -32,10 +30,10 @@ function App() {
                 moviename={val.moviename}
                 link={val.link}
               />
+        </Col>
             );
           })}
-        </Row>
-        <Footer />
+          </Row>
       </Container>
     </>
   );
