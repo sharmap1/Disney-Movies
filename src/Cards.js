@@ -2,16 +2,13 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Row,Col, Container } from "react-bootstrap";
 import "./index.css";
-import Image from "./Image";
-import Heading from "./Heading";
-import Cardtitle from "./Cardtitle";
 import { AiFillPlayCircle } from "react-icons/ai";
 
 
 function Cards(props) {
    return (
     <>
-    {/* <Container style={{ backgroundColor: "pink" }}> */}
+    {/* <Container> */}
       <div className="card1" 
       style={{ backgroundColor: "thistle" , marginBottom:"20px"}}
       >

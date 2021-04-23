@@ -2,7 +2,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   text-align: center;
-  padding: 7px;
+  padding: 5px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -25,6 +25,7 @@
   font-family: "Dancing Script", cursive;
   margin-top: 20px;
   padding-top: 10px;
+  font-size: 35px;
 }
 .card-heading {
   padding-bottom: 20px;
