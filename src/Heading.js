@@ -4,13 +4,12 @@ import "./index.css";
 function Heading(props) {
   return (
     <>
-      {/* <p className="card-heading">{props.moviename}</p> */}
       <h1
           style={{
             textAlign: "center",
             fontFamily: "'Cinzel', serif",
-            color: "purple",
-            backgroundColor: "lavenderblush",
+            color: "lavenderblush",
+            backgroundColor: "rgba(143, 108, 156, 0.911)",
             padding:"30px"
           }}
         >
